@@ -1,4 +1,4 @@
-name: ci
+name: deploy
 
 on:
   push:
@@ -46,4 +46,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: dominikg-deno-test
-          entrypoint: '{out}/index.js' # same as `out` option in config
+          entrypoint: 'build/index.js' # same as `out` option in config
