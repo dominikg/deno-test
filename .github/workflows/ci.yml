@@ -46,4 +46,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: dominikg-deno-test
-          entrypoint: 'build/index.js' # same as `out` option in config
+          entrypoint: 'index.js' # same as `out` option in config
+          root: 'build'
